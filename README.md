@@ -10,9 +10,8 @@ With this in mind the question is: Do I need a `max_width`? In my opinion yes, s
 code we use and it affects how we write our code in a project, this scenarios should not end in contributors having to deal 
 with very wide lines of code.
 
-I think the max width for Rust code should be that of function declaration, and it should take into account that this is a typed
-programming language. I find that good functions usually don't need more than three parameters and when they need more is usually the case 
-that grouping some of them in a struct makes sense. Assuming that a good argument name its type name will need more or less 15 characters each, this 
+I think the max width for Rust code should be that allowed for function declarations, and it should take into account that this is a typed
+programming language. I find that good functions usually don't need more than three parameters and if they do, usually it makes sense that some of them can be stored together. Assuming that a good argument name and its type name will need more or less 15 characters each, this 
 gives us 90 characters for 3 arguments. Adding other 30 characters for the function name and the return type we get to 120 characters, the `max_width` of this
 config.
 
